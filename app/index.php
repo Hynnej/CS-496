@@ -1,6 +1,6 @@
 <?php 
 
-	$uri = "mongodb://sports.sirmiq:door5454@ds048319.mlab.com:48319/sports";
+	$uri = "mongodb://sirmiq:door5454@ds048319.mlab.com:048319/sports";
 	
 	$client = new MongoClient($uri);
 	//$db = $client->selectDB("sports");
