@@ -42,9 +42,6 @@
 		array('name' => $nam),
 		array('$set' => array('name' => $nam))
 	);	
-	
-		
-	$teams->insert($doc);
 
 	//header('Location: index.php');	
 	$client->close();
