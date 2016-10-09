@@ -7,9 +7,9 @@
 	$db = $client->selectDB("sports");
 	$teams = $db->team;
 	$teamName = $_POST['teamEdit'];
+	$edTeam = $teams->findOne(array('name' => "Seattle Seahawks"));	
+	//echo $teamName;
 	
-	$edTeam = $teams->findOne(array('name' => "Oakland A's"));	
-
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +27,7 @@
 		<a class="navbar-brand">Sports Tracker</a>
 		<ul class="nav navbar-nav">
 			<li class="nav-item">
-				<a class="nav-link" href="index.php">Edit Team</a>
+				<a class="nav-link" href="index.php">Add Team</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="viewData.php">Teams</a>
@@ -60,7 +60,7 @@
 				<h2>Add Team</h2>
 				<form method="post" action="editTeam.php">
 					<fieldset class="form-group">
-						<p><input type="hidden" name="col" value="team"/></p>
+						<p><input type="hidden" name="teamId" value="<?php $edTeam["_id"];?>"/></p>
 					<div class="row">
 					<div class="col-md-2 text-center">		
 						<legend>League</legend>
@@ -96,7 +96,7 @@
 					</div>
 
 
-						<p><input type="submit" class="btn btn-success" name="add" value="Add"/></p>
+						<p><input type="submit" class="btn btn-success" name="edit" value="edit"/></p>
 
 
 					</fieldset>
@@ -107,3 +107,5 @@
 </div>
 </body>
 </html>	
+	
+	
