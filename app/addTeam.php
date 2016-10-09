@@ -6,16 +6,14 @@
 		$teams = $db->team;
 	//$location = http://sports-cs496.azurewebsites.net;	
 	$lg = $_POST['leagues'];
-	echo $lg;
 	$div = $_POST['divisional'];
-	echo $div;
 	$nam = $_POST['names'];
 	$webs = $_POST['web'];
 	if($_POST['follows'] == 'yes')
 		$fol = 'Yes';
-//	else
-	//	$fol = 'No';
-	
+	else
+		$fol = 'No';
+	echo $fol;
 	//$doc = array(
 		//	"league" : $lg,
 			//"division" : $div,
