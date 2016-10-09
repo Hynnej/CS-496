@@ -13,7 +13,7 @@
 		$fol = 'Yes';
 	else
 		$fol = 'No';
-	echo $fol;
+
 	$doc = array(
 		'league' => $lg,
 		'division' => $div,

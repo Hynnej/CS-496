@@ -7,7 +7,7 @@
 	$db = $client->selectDB("sports");
 	$teams = $db->team;
 	$teamName = $_POST['teamEdit'];
-	$edTeam = $teams->findOne(array('name' => "Oakland A's"));	
+	$edTeam = $teams->find(array('name' => "Seattle Seahawks"));	
 	//echo $teamName;
 	
 ?>
@@ -60,7 +60,7 @@
 				<h2>Add Team</h2>
 				<form method="post" action="editTeam.php">
 					<fieldset class="form-group">
-
+						<p><input style="display:none" type="text" name="original" value="<?php echo $edTeam["name"];?>"/></p>	
 					<div class="row">
 					<div class="col-md-2 text-center">		
 						<legend>League</legend>

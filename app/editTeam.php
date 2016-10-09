@@ -6,17 +6,17 @@
 	$teams = $db->team;
 	//$location = http://sports-cs496.azurewebsites.net;
 	
-
+	$oName = $_POST['original'];
+	echo $oName;
 	$lg = $_POST['leagues'];
 	$div = $_POST['divisional'];
 	$nam = $_POST['names'];
-	echo $nam;
+
 	$webs = $_POST['web'];
 	if($_POST['follows'] == 'yes')
 		$fol = 'Yes';
 	else
 		$fol = 'No';
-	echo $fol;
 	
 	$teams->update(
 		array('name' => $nam),
@@ -42,6 +42,8 @@
 		array('name' => $nam),
 		array('$set' => array('name' => $nam))
 	);	
+	
+		
 
 	//header('Location: index.php');	
 	$client->close();
