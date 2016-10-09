@@ -60,7 +60,7 @@
 				<h2>Add Team</h2>
 				<form method="post" action="editTeam.php">
 					<fieldset class="form-group">
-						<p><input type="hidden" name="teamId" value="<?php $edTeam["name"];?>"/></p>
+						<p><input type="hidden" name="teamId" value="<?php echo $edTeam["name"];?>"/></p>
 					<div class="row">
 					<div class="col-md-2 text-center">		
 						<legend>League</legend>
