@@ -18,7 +18,7 @@
 		'league' => 'MLB',
 		'division' => 'AL-West',
 		'name' => 'Seattle Mariners',
-		'website' => "www.seattlemariners.com',
+		'website' => 'www.seattlemariners.com',
 		'follows' => 'Yes');
 		
 	$teams->insert($doc);
