@@ -23,6 +23,6 @@
 		
 	$teams->insert($doc);
 				/* Redirect browser */
-		header("Location: http://sports-cs496.azurewebsites.net");	
+		header("Location: sports-cs496.azurewebsites.net");	
 	
 ?>
