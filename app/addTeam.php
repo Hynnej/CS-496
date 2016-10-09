@@ -23,6 +23,6 @@
 		
 	$teams->insert($doc);
 				/* Redirect browser */
-		header('Location: ' .$location);	
+		//header('Location: ' .$location);	
 	
 ?>
