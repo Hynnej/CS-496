@@ -6,7 +6,7 @@
 	$teams = $db->team;
 	$teamName = $_POST['teamEdit'];
 	$query = array('name' => 'Seattle Seahawks');
-	$results = $teams->find($query);
+	$results = $teams->findOne($query);
 
 
 		echo $["name"];
