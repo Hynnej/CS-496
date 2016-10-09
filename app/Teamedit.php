@@ -4,7 +4,8 @@
 	$client = new MongoClient($uri);
 	$db = $client->selectDB("sports");
 	$teams = $db->team;
-	$nam = $_POST['teamEdit'];
+	$nam = new MongoRegex($_POST['teamEdit']);
+	
 	$results = $teams->find(array('name' => "$nam"));
 
 	foreach($results as $doc)
