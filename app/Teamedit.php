@@ -5,7 +5,7 @@
 	$db = $client->selectDB("sports");
 	$teams = $db->team;
 	$nam = $_POST['teamEdit'];
-	$results = $teams->findOne(array('name' => $nam));
+	$results = $teams->find(array('name' => $nam));
 
 	foreach($results as $doc)
 	{	
