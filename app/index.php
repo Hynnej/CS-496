@@ -6,7 +6,7 @@
 	$db = $client->selectDB("sports");
 	
 	$teams = $db->team;
-	$collection = $teams-find();
+	$collection = $teams->find();
 	foreach($collection as $doc)
 	{
 		echo 'Sport ' .$doc['sport'] "\n";
