@@ -40,7 +40,7 @@
 							?>
 						</select>
 					</div>
-					<input type="submit" class="btn btn-primary" name="editTeam" value="Edit Team"/>
+					<input type="submit" class="btn btn-primary" name="editTeam"/>
 				</form>
 			</li>
 		</ul>	
