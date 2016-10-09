@@ -9,6 +9,6 @@
 	$collection = $teams->find();
 	foreach($collection as $doc)
 	{
-		echo 'Sport ' .$doc['sport'] "\n";
+		echo 'Sport ' .$doc['sport'] . "\n";
 	}
 ?>
