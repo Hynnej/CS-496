@@ -50,6 +50,9 @@
 	</nav>
 	
 		<!--Form to add team-->
+		<?php 
+			echo $edTeam["name"];
+		?>	
 		<div class="row">
 			<div class="col-md-12 text-center">	
 				<h2>Add Team</h2>
