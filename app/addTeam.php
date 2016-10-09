@@ -9,10 +9,10 @@
 	$div = $_POST['divisional'];
 	$nam = $_POST['names'];
 	$webs = $_POST['web'];
-	if($_POST['follows'] == yes)
-		$fol = "Yes";
+	if($_POST['follows'] == 'yes')
+		$fol = 'Yes';
 	else
-		$fol = "No";
+		$fol = 'No';
 	
 	$doc = array(
 			"league" : $lg,
