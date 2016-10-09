@@ -60,7 +60,7 @@
 				<h2>Edit Team</h2>
 				<form method="post" action="editTeam.php">
 					<fieldset class="form-group">
-						<p><input type="hidden" name="original" value="<?php $edTeam["name"];?>"/></p>	
+	
 					<div class="row">
 					<div class="col-md-2 text-center">		
 						<legend>League</legend>
