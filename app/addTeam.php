@@ -14,12 +14,12 @@
 	else
 		$fol = 'No';
 	echo $fol;
-	//$doc = array(
-		//	"league" : $lg,
-			//"division" : $div,
-			//"name" : $nam,
-			//"website" : $webs,
-			//"follows" : "Yes");
+	$doc = array(
+		"league" : $lg,
+		"division" : $div,
+		"name" : $nam,
+		"website" : $webs,
+		"follows" : $fol);
 		
 	//$teams->insert($doc);
 				/* Redirect browser */
