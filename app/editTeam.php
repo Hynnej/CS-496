@@ -18,11 +18,28 @@
 	$teams->update(
 		array('name' => $nam),
 		array('$set' => array('league' => $lg))
-	);		
-
+	);	
+	$teams->update(
+		array('name' => $nam),
+		array('$set' => array('division' => $div))
+	);	
+	
+	$teams->update(
+		array('name' => $nam),
+		array('$set' => array('web' => $webs))
+	);	
+	
+	$teams->update(
+		array('name' => $nam),
+		array('$set' => array('follows' => $fol))
+	);	
+	$teams->update(
+		array('name' => $nam),
+		array('$set' => array('name' => $nam))
+	);	
+	
 		
 	$teams->insert($doc);
-
 	header('Location: index.php');	
 	$client->close();
 ?>
