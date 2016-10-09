@@ -7,6 +7,7 @@
 	//$location = http://sports-cs496.azurewebsites.net;
 	
 	$tID = $_POST['teamId'];
+	echo $tID;
 	$lg = $_POST['leagues'];
 	$div = $_POST['divisional'];
 	$nam = $_POST['names'];
@@ -45,6 +46,6 @@
 		
 	$teams->insert($doc);
 
-	header('Location: index.php');	
+	//header('Location: index.php');	
 	$client->close();
 ?>
