@@ -35,12 +35,12 @@
 								$collection = $teams->find();
 								foreach($collection as $doc)
 								{	
-									echo '<option value=" . $doc["name"] . ">'  . $doc["name"] . "</option>\n";
+									echo '<option value=" '. $doc["name"] . ' "> ' . $doc["name"] . '</option>\n';
 								}
 							?>
 						</select>
 					</div>
-					<input type="submit" class="btn btn-primary" name="editTeam"/>
+					<input type="submit" class="btn btn-primary" name="editTeam" value="EditTeam"/>
 				</form>
 			</li>
 		</ul>	
