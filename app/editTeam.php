@@ -6,8 +6,8 @@
 	$teams = $db->team;
 	//$location = http://sports-cs496.azurewebsites.net;
 	
-	$tID = $_POST['teamId'];
-	echo $tID;
+	$oName = $_POST['teamId'];
+	echo $oName;
 	$lg = $_POST['leagues'];
 	$div = $_POST['divisional'];
 	$nam = $_POST['names'];
@@ -19,27 +19,27 @@
 	echo $fol;
 	
 	$teams->update(
-		array('_id' => $tID),
+		array('name' => $oName),
 		array('$set' => array('league' => $lg))
 	);	
 
 	$teams->update(
-		array('_id' => $tID),
+		array('name' => $oName),
 		array('$set' => array('division' => $div))
 	);	
 	
 	$teams->update(
-		array('_id' => $tID),
+		array('name' => $oName),
 		array('$set' => array('web' => $webs))
 	);	
 	
 	$teams->update(
-		array('_id' => $tID),
+		array('name' => $oName),
 		array('$set' => array('follows' => $fol))
 	);	
 
 	$teams->update(
-		array('_id' => $tID),
+		array('name' => $oName),
 		array('$set' => array('name' => $nam))
 	);	
 	
