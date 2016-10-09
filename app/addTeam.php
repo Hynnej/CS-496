@@ -9,19 +9,19 @@
 	$div = $_POST['divisional'];
 	$nam = $_POST['names'];
 	$webs = $_POST['web'];
-	if($_POST['follows'] == 'yes')
-		$fol = 'Yes';
-	else
-		$fol = 'No';
+	//if($_POST['follows'] == 'yes')
+		//$fol = 'Yes';
+//	else
+	//	$fol = 'No';
 	
-	$doc = array(
-			"league" : $lg,
-			"division" : $div,
-			"name" : $nam,
-			"website" : $webs,
-			"follows" : "Yes");
+	//$doc = array(
+		//	"league" : $lg,
+			//"division" : $div,
+			//"name" : $nam,
+			//"website" : $webs,
+			//"follows" : "Yes");
 		
-	$teams->insert($doc);
+	//$teams->insert($doc);
 				/* Redirect browser */
 		//header('Location: ' .$location);	
 	
