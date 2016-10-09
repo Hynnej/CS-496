@@ -6,8 +6,8 @@
 	$client = new MongoClient($uri);
 	$db = $client->selectDB("sports");
 	$teams = $db->team;
-	$teamID = $_POST['editTeam'];
-	$edTeam = $teams->findone(array('_id' => new MongoId($teamID));	
+	$teamName = $_POST['editTeam'];
+	$edTeam = $teams->findone(array('name' => $teamName);	
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +38,7 @@
 								$collection = $teams->find();
 								foreach($collection as $doc)
 								{	
-									echo '<option value=" '. $doc["_id"] . ' "> ' . $doc["name"] . '</option>\n';
+									echo '<option value=" '. $doc["name"] . ' "> ' . $doc["name"] . '</option>\n';
 								}
 							?>
 						</select>

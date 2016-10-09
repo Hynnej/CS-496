@@ -35,7 +35,7 @@
 								$collection = $teams->find();
 								foreach($collection as $doc)
 								{	
-									echo '<option value=" '. $doc["_id"] . ' "> ' . $doc["name"] . '</option>\n';
+									echo '<option value=" '. $doc["name"] . ' "> ' . $doc["name"] . '</option>\n';
 								}
 							?>
 						</select>
@@ -47,7 +47,7 @@
 	</nav>
 
 	
-		<!--Form to adde team-->
+		<!--Form to add team-->
 		<div class="row">
 			<div class="col-md-12 text-center">	
 				<h2>Add Team</h2>
