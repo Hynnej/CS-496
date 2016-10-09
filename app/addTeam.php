@@ -4,7 +4,7 @@
 	$client = new MongoClient($uri);
 	$db = $client->selectDB("sports");
 		$teams = $db->team;
-		
+	$location = http://sports-cs496.azurewebsites.net;	
 	$lg = $_POST['leagues'];
 	$div = $_POST['divisional'];
 	$nam = $_POST['names'];
@@ -23,6 +23,6 @@
 		
 	$teams->insert($doc);
 				/* Redirect browser */
-		header("Location: sports-cs496.azurewebsites.net");	
+		header('Location: ' .$location);	
 	
 ?>
