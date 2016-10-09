@@ -5,6 +5,6 @@
 	$db = $client->selectDB("sports");
 	$teams = $db->team;
 	$teamName = $_POST['teamEdit'];
-	$edTeam = $teams->find(array('name' => $teamName));	
-	echo $teamName . ' ' . $edTeam["name"] . ' ' .  $_POST['teamEdit'];
+	//$edTeam = $teams->find(array('name' => $teamName));	
+	echo $teamName . ' ' .  $_POST['teamEdit'];
 ?>
