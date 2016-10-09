@@ -9,7 +9,7 @@
 	$results = $teams->findOne($query);
 
 
-		echo $["name"];
+		echo $results["name"];
 
 		
 ?>
