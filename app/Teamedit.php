@@ -8,10 +8,11 @@
 	$results = $teams->find();
 	foreach($results as $doc)
 	{
-		if($doc["name"] == $teamName)
+		echo $doc["name"] . '\n';
+		/*if($doc["name"] == $teamName)
 		{
 			$edTeam = $doc;
 			echo $edTeam["name"];
-		}
+		}*/
 	}	
 ?>
