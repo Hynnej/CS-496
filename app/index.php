@@ -23,7 +23,7 @@
 		<div class="row">
 			<div class="col-md-12 text-center">	
 				<h2>Add Team</h2>
-				<form method="post" action="./forms/addTeam.php">
+				<form method="post" action="addTeam.php">
 					<fieldset class="form-group">
 						<p><input type="hidden" name="col" value="team"/></p>
 					<div class="row">
