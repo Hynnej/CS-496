@@ -1,3 +1,11 @@
+<?php
+	//connects to mongodb hosted at mlabs
+	$uri = "mongodb://sirmiq:door5454@ds048319.mlab.com:48319/sports";
+	$client = new MongoClient($uri);
+	$db = $client->selectDB("sports");
+		$teams = $db->team;
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -10,10 +18,30 @@
 <div class="container">
 	<!--nav bar-->
 	<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-		<a class="navbar-brand" href="index.php">Sports Tracker</a>
+		<a class="navbar-brand">Sports Tracker</a>
 		<ul class="nav navbar-nav">
 			<li class="nav-item">
+				<a class="nav-link" href="index.php">Add Teams</a>
+			</li>
+			<li class="nav-item">
 				<a class="nav-link" href="viewData.php">Teams</a>
+			</li>
+			<li>
+			<form method="post" class="form-inline" action="Teamedit.php">
+				<div class="form-group">
+					<select class="c-select" name="teamEdit">
+							<option selected>Edit Team</option>						
+							<?php
+								$collection = $teams->find();
+								foreach($collection as $doc)
+								{	
+									echo '<option value=" '. $doc["_id"] . ' "> ' . $doc["name"] . '</option>\n';
+								}
+							?>
+						</select>
+					</div>
+					<input type="submit" class="btn btn-primary" name="editTeam" value="Edit Team"/>
+				</form>
 			</li>
 		</ul>	
 	</nav>
