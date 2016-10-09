@@ -5,8 +5,8 @@
 	$db = $client->selectDB("sports");
 	$teams = $db->team;
 	$teamName = $_POST['editTeam'];
-	$edTeam = $teams->find(array('name' => $teamName));	
-	echo $edTeam["name"];
+	
+	echo $teamName["name"];
 ?>
 	
 	
