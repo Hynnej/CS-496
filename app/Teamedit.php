@@ -5,10 +5,10 @@
 	$db = $client->selectDB("sports");
 	$teams = $db->team;
 	$teamName = $_POST['teamEdit'];
-	$query = array('name' => $teamName);
+	$query = array('name' => 'Seattle Seahawks');
 	$results = $teams->find($query);
 
-		echo $results["name"] . '\n';
+		echo $results["name"];
 
 	}	
 ?>
