@@ -10,7 +10,7 @@
 	$lg = $_POST['leagues'];
 	$div = $_POST['divisional'];
 	$nam = $_POST['names'];
-	echo $name;
+	echo $nam;
 	$webs = $_POST['web'];
 	if($_POST['follows'] == 'yes')
 		$fol = 'Yes';
