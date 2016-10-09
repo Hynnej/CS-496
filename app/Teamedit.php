@@ -6,7 +6,7 @@
 	$teams = $db->team;
 	$teamName = $_POST['editTeam'];
 	
-	echo  $_POST['editTeam'];
+	echo  $_POST['teamEdit'];
 ?>
 	
 	
