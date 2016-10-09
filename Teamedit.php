@@ -1,5 +1,3 @@
-<!--Displays table-->
-
 <?php
 	//connects to mongodb hosted at mlabs
 	$uri = "mongodb://sirmiq:door5454@ds048319.mlab.com:48319/sports";
@@ -9,7 +7,4 @@
 	$teamName = $_POST['teamEdit'];
 	$edTeam = $teams->findOne(array('name' => $teamName));	
 	echo $teamName . ' ' . $edTeam["name"]' ' .  $_POST['teamEdit'];
-?>
-
-	
-	
+?>	
