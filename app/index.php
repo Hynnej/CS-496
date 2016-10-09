@@ -13,7 +13,7 @@
 		<a class="navbar-brand" href="index.php">Sports Tracker</a>
 		<ul class="nav navbar-nav">
 			<li class="nav-item">
-				<a class="nav-link" href="viewData.php">Teams</a>
+				<a class="nav-link" href="pages/viewData.php">Teams</a>
 			</li>
 		</ul>	
 	</nav>
