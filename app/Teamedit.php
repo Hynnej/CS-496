@@ -4,12 +4,12 @@
 	$client = new MongoClient($uri);
 	$db = $client->selectDB("sports");
 	$teams = $db->team;
-	$nam = new MongoRegex($_POST['teamEdit']);
+	$nam = ($_POST['teamEdit'];
 	
-	$results = $teams->findOne(array('name' => $nam));
+	//$results = $teams->find(array('name' => $nam));
 
 	
-		echo $results['name'];
+		echo $nam['name'];
 	
 		
 ?>
