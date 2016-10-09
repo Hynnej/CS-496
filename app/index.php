@@ -35,7 +35,7 @@
 								$collection = $teams->find();
 								foreach($collection as $doc)
 								{	
-									echo '<option value=" '. $doc["name"] . ' "> ' . $doc["name"] . '</option>\n';
+									echo '<option value=" . $doc["name"] . ">'  . $doc["name"] . "</option>\n";
 								}
 							?>
 						</select>
