@@ -48,16 +48,7 @@
 						<th>Follow</th>
 					</tr>
 					</thead>
-					<?php
-					//Displays recipe table
-					$collection = $teams->find();
-					foreach($collection as $doc)
-					{
-						//echo "<tr>";
-						//echo"<td>" 
-						echo "<tr><td>" . $doc['league'] . "</td><td>" . $doc['division'] . "</td><td>" . $doc['name'] . "</td><td>" . $doc['website'] . "</td><td>" . $doc['follows'] .  "</td></tr>";
-					}
-					?>
+	
 				</table>			
 			</div>
 		</div>
