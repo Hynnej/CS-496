@@ -5,6 +5,13 @@
 	$db = $client->selectDB("sports");
 	$teams = $db->team;
 	$teamName = $_POST['teamEdit'];
-	$edTeam = $teams->findOne(array('name' => $teamName));	
-	echo $teamName . ' ' . $edTeam["name"] . ' ' .  $_POST['teamEdit'];
+	$results = $teams->find();
+	foreach($results as $doc)
+	{
+		if($doc["name"] == $teamName)
+		{
+			$edTeam = $doc;
+			echo $edTeam["name"];
+		}
+	}	
 ?>
