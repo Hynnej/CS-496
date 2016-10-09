@@ -7,8 +7,9 @@
 	$nam = $_POST['teamEdit'];
 	$results = $teams->findOne(array('name' => $nam));
 
-
+	foreach($results as $doc)
+	{	
 		echo $results['name'];
-
+	}
 		
 ?>
