@@ -15,11 +15,11 @@
 		$fol = 'No';
 	echo $fol;
 	$doc = array(
-		"league" : $lg,
-		"division" : $div,
-		"name" : $nam,
-		"website" : $webs,
-		"follows" : $fol);
+		"league" => $lg,
+		"division" => $div,
+		"name" => $nam,
+		"website" => $webs,
+		"follows" => $fol);
 		
 	//$teams->insert($doc);
 				/* Redirect browser */
