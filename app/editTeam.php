@@ -17,7 +17,7 @@
 	
 	$teams->update(
 		array('name' => $nam),
-		array('$set' => array('league' => $lg)0
+		array('$set' => array('league' => $lg))
 	);		
 
 		
