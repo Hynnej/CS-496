@@ -21,7 +21,7 @@
 		"website" => $webs,
 		"follows" => $fol);
 		
-	//$teams->insert($doc);
+	$teams->insert($doc);
 				/* Redirect browser */
 		//header('Location: ' .$location);	
 	
