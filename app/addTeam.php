@@ -15,11 +15,11 @@
 		$fol = 'No';
 	echo $fol;
 	$doc = array(
-		'league' => 'MLB',
-		'division' => 'AL-West',
-		'name' => 'Seattle Mariners',
-		'website' => 'www.seattlemariners.com',
-		'follows' => 'Yes');
+		'league' => $lg,
+		'division' => $div,
+		'name' => $nam,
+		'website' => $webs,
+		'follows' => $fol);
 		
 	$teams->insert($doc);
 
