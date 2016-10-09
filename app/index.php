@@ -4,9 +4,9 @@
 	//phpinfo();
 	$client = new MongoClient($uri);
 	$db = $client->selectDB("sports");
-	//$teams = $db->team;
-	//foreach($teams as $doc)
-//	{
-	//	echo 'Sport ' .$doc['sport'];
-	//}
+	$teams = $db->team;
+	foreach($teams as $doc)
+	{
+		echo 'Sport ' .$doc['sport'];
+	}
 ?>
