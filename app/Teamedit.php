@@ -6,7 +6,7 @@
 	$teams = $db->team;
 	$nam = new MongoRegex($_POST['teamEdit']);
 	
-	$results = $teams->find(array('name' => "$nam"));
+	$results = $teams->find(array('name' => $nam));
 
 	foreach($results as $doc)
 	{	
