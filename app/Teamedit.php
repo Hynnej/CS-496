@@ -8,7 +8,8 @@
 	$query = array('name' => 'Seattle Seahawks');
 	$results = $teams->find($query);
 
-		echo $results["name"];
 
-	}	
+		echo $["name"];
+
+		
 ?>
