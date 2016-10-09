@@ -4,8 +4,8 @@
 	$client = new MongoClient($uri);
 	$db = $client->selectDB("sports");
 	$teams = $db->team;
-	$teamName = $_POST['teamEdit'];
-	$query = array('name' => $_POST['teamEdit']);
+	$nam = $_POST['teamEdit'];
+	$query = array('name' => $nam);
 	$results = $teams->find($query);
 
 
