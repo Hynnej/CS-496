@@ -37,6 +37,7 @@
 								{	
 									echo '<option value=" '. $doc["name"] . ' "> ' . $doc["name"] . '</option>\n';
 								}
+								$client->close();	
 							?>
 						</select>
 					</div>

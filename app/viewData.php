@@ -42,7 +42,7 @@
 							?>
 						</select>
 					</div>
-					<input type="submit" class="btn btn-primary" name="editTeam" value="Edit Team"/>
+					<input type="submit" class="btn btn-primary" name="editTeam" value="EditTeam"/>
 				</form>
 			</li>
 		</ul>	
@@ -72,6 +72,7 @@
 						//echo"<td>" 
 						echo "<tr><td>" . $doc['league'] . "</td><td>" . $doc['division'] . "</td><td>" . $doc['name'] . "</td><td>" . $doc['website'] . "</td><td>" . $doc['follows'] .  "</td></tr>";
 					}
+					$client->close();
 					?>
 
 				</table>			
