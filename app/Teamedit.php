@@ -8,7 +8,7 @@
 	$teams = $db->team;
 	$teamName = $_POST['teamEdit'];
 	
-	$edTeam = $teams->findOne(array('name' => 'Seattle Mariners'));	
+	$edTeam = $teams->findOne(array('name' => "Oakland A's"));	
 
 ?>
 
