@@ -6,7 +6,7 @@
 	$teams = $db->team;
 	$teamName = $_POST['teamEdit'];
 	$query = array('name' => $teamName);
-	$edTeam = $teams->find($query);	
+	$edTeam = $teams->findOne($query);	
 
 
 	var_dump($query);
