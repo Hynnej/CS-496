@@ -10,7 +10,7 @@
 	$nam = $_POST['names'];
 	$webs = $_POST['web'];
 	
-	($div === NULL || $nam === NULL || $webs === NULL)
+	($div == NULL || $nam == NULL || $webs == NULL)
 	{
 		echo "Document not saved.  Be sure you have entered league, division name and website."
 	}	
