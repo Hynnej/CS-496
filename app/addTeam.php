@@ -10,13 +10,13 @@
 	$nam = $_POST['names'];
 	$webs = $_POST['web'];
 	
-	/*if(!$_POST['divisional']| | !$_POST['names'] || !$_POST['web'])
+	($div === NULL || $nam === NULL || $webs === NULL)
 	{
 		echo "Document not saved.  Be sure you have entered league, division name and website."
 	}	
 	else
 	{
-		$query = array('name' => $name);
+		/*$query = array('name' => $name);
 		$unique = $teams->find($query);	
 		
 		if(!$Unique)		
@@ -36,7 +36,8 @@
 			$teams->insert($doc);
 			
 			header('Location: index.php');	
-		/*}
+		}
+	/*}
 	else
 	{
 		echo "Team is already added."
