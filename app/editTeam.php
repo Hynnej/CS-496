@@ -19,27 +19,27 @@
 		$fol = 'No';
 	
 	$teams->update(
-		array('name' => $nam),
+		array('name' => $oName),
 		array('$set' => array('league' => $lg))
 	);	
 
 	$teams->update(
-		array('name' => $nam),
+		array('name' => $oName),
 		array('$set' => array('division' => $div))
 	);	
 	
 	$teams->update(
-		array('name' => $nam),
+		array('name' => $oName),
 		array('$set' => array('web' => $webs))
 	);	
 	
 	$teams->update(
-		array('name' => $nam),
+		array('name' => $oName),
 		array('$set' => array('follows' => $fol))
 	);	
 
 	$teams->update(
-		array('name' => $nam),
+		array('name' => $oName),
 		array('$set' => array('name' => $nam))
 	);	
 	
