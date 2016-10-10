@@ -13,12 +13,13 @@
 	
 	if($nam && $div && $webs)
 	{
-        $nam = ltrim($nam, ' ');
-        $nam = rtrim($nam, ' ');
-	$query = array('name' => $nam);
-	$unique = $teams->findOne($query);
+       		$nam = ltrim($nam, ' ');
+       		$nam = rtrim($nam, ' ');
+		$query = array('name' => $nam);
+		$unique = $teams->findOne($query);
 		
-		if($unique)		
+		var_dump(unique
+		/*if($unique)		
 		{
 			echo "Team is already added."
 		}
@@ -39,7 +40,7 @@
 			$teams->insert($doc);
 			
 			header('Location: index.php');				
-		}
+		}*/
 	}
 	else
 		echo "Document not saved.  Be sure you have entered league, division name and website.";
