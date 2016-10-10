@@ -40,7 +40,7 @@
 	}*/
 	}
 	else
-		echo "Document not saved.  Be sure you have entered league, division name and website."
+		echo "Document not saved.  Be sure you have entered league, division name and website.";
 		
 
 	$client->close();
