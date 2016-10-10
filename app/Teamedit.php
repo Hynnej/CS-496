@@ -5,6 +5,7 @@
 	$db = $client->selectDB("sports");
 	$teams = $db->team;
 	$teamName = $_POST['teamEdit'];
+        $teamName = ltrim($teamName, ' ');
         //$teamName = "Seattle Mariners";
 	$query = array('name' => $teamName);
 	$edTeam = $teams->findOne($query);	
