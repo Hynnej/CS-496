@@ -10,7 +10,7 @@
 	$nam = $_POST['names'];
 	$webs = $_POST['web'];
 	
-	if(!$lg || !$div || !$nam || !$nam)
+	if(!$$_POST['leagues']; || !$_POST['divisional']| | !$_POST['names'] || !$_POST['web'])
 	{
 		echo "Document not saved.  Be sure you have entered league, division name and website."
 	}	
