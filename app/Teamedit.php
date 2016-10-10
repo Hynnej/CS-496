@@ -7,13 +7,11 @@
 	$teamName = $_POST['teamEdit'];
 	$string = str_replace(" ", "", $string)
 	$query = array('name' => $teamName);
-	$edTeam = $teams->find($query);	
-
-$jokesArray = iterator_to_array($edTeam);
-	var_dump($_POST['teamEdit']);
+	$edTeam = $teams->findOne($query);	
+	var_dump($teamName);
 	var_dump($query);
 	var_dump($edTeam);
-	var_dump($jokesArray);
+	
 		
 ?>
 	
