@@ -8,7 +8,7 @@
 	$edTeam = $teams->findOne(array('name' => $teamName));	
 
 
-	echo $edTeam["name"];
+	var_dump($edTeam);
 		
 ?>
 	
