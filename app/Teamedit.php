@@ -10,7 +10,7 @@
 	$edTeam = $teams->find($query);	
 
 $jokesArray = iterator_to_array($edTeam);
-	var_dump($teamName);
+	var_dump($_POST['teamEdit']);
 	var_dump($query);
 	var_dump($edTeam);
 	var_dump($jokesArray);
