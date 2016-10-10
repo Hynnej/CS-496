@@ -10,16 +10,16 @@
 	$nam = $_POST['names'];
 	$webs = $_POST['web'];
 	
-	if(!$$_POST['leagues']; || !$_POST['divisional']| | !$_POST['names'] || !$_POST['web'])
+	if(!$_POST['divisional']| | !$_POST['names'] || !$_POST['web'])
 	{
 		echo "Document not saved.  Be sure you have entered league, division name and website."
 	}	
 	else
 	{
 		$query = array('name' => $name);
-		$unique = $teams->findOne($query);	
+		$unique = $teams->find($query);	
 		
-		if($Unique)		
+		if(!$Unique)		
 		{
 			if($_POST['follows'] == 'yes')
 				$fol = 'Yes';
