@@ -6,7 +6,7 @@
 	$teams = $db->team;
 	$teamName = $_POST['teamEdit'];
 	$edTeam = $teams->find();	
-	for(each $edTeam as $doc)
+	foreach($edTeam as $doc)
 	{
 		echo $doc['name'];
 	}	
