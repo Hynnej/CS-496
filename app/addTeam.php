@@ -14,13 +14,13 @@
 	{
 		echo "Document not saved.  Be sure you have entered league, division name and website."
 	}	
-	else*/
+	else
 	{
 		$query = array('name' => $name);
 		$unique = $teams->find($query);	
 		
 		if(!$Unique)		
-		{
+		{*/
 			if($_POST['follows'] == 'yes')
 				$fol = 'Yes';
 			else
@@ -36,10 +36,10 @@
 			$teams->insert($doc);
 			
 			header('Location: index.php');	
-		}
+		/*}
 	else
 	{
 		echo "Team is already added."
-	}
+	}*/
 	$client->close();
 ?>
