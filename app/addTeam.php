@@ -13,9 +13,9 @@
 	if($nam && $div && $webs)
 	{
 		$query = array('name' => $name);
-		$unique = $teams->find($query);	
+		$unique = $teams->findOne($query);	
 		
-		if(!$Unique)		
+		if($unique == NULL)		
 		{
 			if($_POST['follows'] == 'yes')
 				$fol = 'Yes';
