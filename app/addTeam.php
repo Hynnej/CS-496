@@ -18,10 +18,10 @@
 		$query = array('name' => $nam);
 		$unique = $teams->findOne($query);
 		
-		var_dump(unique
-		/*if($unique)		
+		var_dump(unique);
+		if($unique)		
 		{
-			echo "Team is already added."
+			echo "Team is already added.";
 		}
 		
 		else
@@ -40,7 +40,7 @@
 			$teams->insert($doc);
 			
 			header('Location: index.php');				
-		}*/
+		}
 	}
 	else
 		echo "Document not saved.  Be sure you have entered league, division name and website.";
