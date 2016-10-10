@@ -8,9 +8,10 @@
 	$query = array('name' => $teamName);
 	$edTeam = $teams->find($query);	
 
-
+$jokesArray = iterator_to_array($edTeam);
 	var_dump($query);
 	var_dump($edTeam);
+	var_dump($jokesArray);
 		
 ?>
 	
