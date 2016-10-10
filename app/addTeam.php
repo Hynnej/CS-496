@@ -10,11 +10,11 @@
 	$nam = $_POST['names'];
 	$webs = $_POST['web'];
 	
-	if(!$_POST['divisional']| | !$_POST['names'] || !$_POST['web'])
+	/*if(!$_POST['divisional']| | !$_POST['names'] || !$_POST['web'])
 	{
 		echo "Document not saved.  Be sure you have entered league, division name and website."
 	}	
-	else
+	else*/
 	{
 		$query = array('name' => $name);
 		$unique = $teams->find($query);	
