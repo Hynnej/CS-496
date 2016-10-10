@@ -9,20 +9,37 @@
 	$div = $_POST['divisional'];
 	$nam = $_POST['names'];
 	$webs = $_POST['web'];
-	if($_POST['follows'] == 'yes')
-		$fol = 'Yes';
+	
+	if(!$lg || !$div || !$nam || !$nam)
+	{
+		echo "Document not saved.  Be sure you have entered league, division name and website."
+	}	
 	else
-		$fol = 'No';
-
-	$doc = array(
-		'league' => $lg,
-		'division' => $div,
-		'name' => $nam,
-		'website' => $webs,
-		'follows' => $fol);
+	{
+		$query = array('name' => $name);
+		$unique = $teams->findOne($query);	
 		
-	$teams->insert($doc);
+		if($Unique)		
+		{
+			if($_POST['follows'] == 'yes')
+				$fol = 'Yes';
+			else
+				$fol = 'No';
 
-	header('Location: index.php');	
+			$doc = array(
+				'league' => $lg,
+				'division' => $div,
+				'name' => $nam,
+				'website' => $webs,
+				'follows' => $fol);
+				
+			$teams->insert($doc);
+			
+			header('Location: index.php');	
+		}
+	else
+	{
+		echo "Team is already added."
+	}
 	$client->close();
 ?>
