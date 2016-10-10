@@ -12,7 +12,7 @@
 	
 	if($nam && $div && $webs)
 	{
-		$query = array('name' => $name);
+		$query = array('name' => $nam);
 		$unique = $teams->findOne($query);	
 		
 		if($unique == NULL)		
