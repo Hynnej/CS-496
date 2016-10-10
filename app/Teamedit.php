@@ -5,9 +5,11 @@
 	$db = $client->selectDB("sports");
 	$teams = $db->team;
 	$teamName = $_POST['teamEdit'];
-	$edTeam = $teams->findOne(array('name' => $teamName));	
+	$query = array('name' => $teamName);
+	$edTeam = $teams->findOne($query);	
 
 
+	var_dump($query);
 	var_dump($edTeam);
 		
 ?>
