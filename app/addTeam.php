@@ -18,7 +18,6 @@
 		$query = array('name' => $nam);
 		$unique = $teams->findOne($query);
 		
-		var_dump(unique);
 		if($unique)		
 		{
 			echo "Team is already added.";
