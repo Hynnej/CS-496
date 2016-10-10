@@ -5,7 +5,7 @@
 	$db = $client->selectDB("sports");
 	$teams = $db->team;
 	$teamName = $_POST['teamEdit'];
-	$edTeam = $teams->findOne(array('name' => new MongoRegex($_POST['teamEdit'])));	
+	$edTeam = $teams->findOne(array('name' => new MongoRegex($teamName)));	
 	echo  $teamName . ' ' . $edTeam["name"];
 	
 ?>
