@@ -5,7 +5,7 @@
 	$db = $client->selectDB("sports");
 	$teams = $db->team;
 	$teamName = $_POST['teamEdit'];
-	$edTeam = $teams->findOne(array('name' => $_POST['teamEdit']));	
+	$edTeam = $teams->findOne(array('name' => (string)$_POST['teamEdit']));	
 	echo  $teamName . ' ' . $edTeam["name"];
 	
 ?>
