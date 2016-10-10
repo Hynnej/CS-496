@@ -68,9 +68,8 @@
 					$collection = $teams->find();
 					foreach($collection as $doc)
 					{
-						//echo "<tr>";
-						//echo"<td>" 
-												echo "<tr><td>" . $doc['league'] . "</td><td>" . $doc['division'] . "</td><td>" . $doc['name'] . "</td><<td><a href=".$doc['website']."></a></td>'" . "</td><td>" . $doc['follows'] .  "</td></tr>";
+
+					echo "<tr><td>" . $doc['league'] . "</td><td>" . $doc['division'] . "</td><td>" . $doc['name'] . "</td><<td><a href=" . $doc['website']. "></a></td>" . "</td><td>" . $doc['follows'] .  "</td></tr>";
 					}
 					$client->close();
 					?>
