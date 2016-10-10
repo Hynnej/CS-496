@@ -5,12 +5,8 @@
 	$db = $client->selectDB("sports");
 	$teams = $db->team;
 	$teamName = $_POST['teamEdit'];
-	$collection = $teams->find();	
-	foreach($edTeam as $doc)
-	{
-		if($doc["name"] == $teamName)
-			$edTeam = $doc;
-	}
+	$edTeam = $teams::findOne(array('name' => $teamName));	
+
 
 	echo $edTeam["name"];
 		
