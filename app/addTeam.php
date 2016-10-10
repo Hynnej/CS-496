@@ -10,7 +10,7 @@
 	$nam = $_POST['names'];
 	$webs = $_POST['web'];
 	
-	($div && $nam && $webs)
+	if($div && $nam && $webs)
 	{
 		/*$query = array('name' => $name);
 		$unique = $teams->find($query);	
