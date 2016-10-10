@@ -6,7 +6,7 @@
 	$teams = $db->team;
 	$teamName = $_POST['teamEdit'];
 	$edTeam = $teams->findOne(array('name' => $teamName));	
-	echo $edTeam["name"];
+	echo  $teamName . ' ' . $edTeam["name"];
 	
 ?>
 	
