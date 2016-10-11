@@ -5,7 +5,9 @@
 	$uri = "mongodb://sirmiq:door5454@ds048319.mlab.com:48319/sports";
 	$client = new MongoClient($uri);
 	$db = $client->selectDB("sports");
-		$teams = $db->team;
+	$teams = $db->team;
+	$collection = $teams->find();	
+		
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +36,6 @@
 					<select class="c-select" name="teamEdit">
 							<option selected>Edit Team</option>						
 							<?php
-								$collection = $teams->find();
 								foreach($collection as $doc)
 								{	
 									echo '<option value=" '. $doc["name"] . ' "> ' . $doc["name"] . '</option>\n';
@@ -65,11 +66,21 @@
 
 					<?php
 					//Displays recipe table
-					$collection = $teams->find();
+
 					foreach($collection as $doc)
 					{
+							echo "<tr><td>" . $doc['league'] . "</td><td>" . $doc['division'] . "</td><td>" . $doc['name'] . "</td><td><a href=" . $rows['url'] . ">" . $doc['website'] . "</a></td><td>" . $doc['follows'] .  "</td></tr>";
+					}
+					$client->close();
+					?>
 
-					echo "<tr><td>" . $doc['league'] . "</td><td>" . $doc['division'] . "</td><td>" . $doc['name'] . "</td><td><a href=" . $rows['url'] . ">" . $doc['website'] . "</a></td><td>" . $doc['follows'] .  "</td></tr>";
+				</table>			
+			</div>
+		</div>
+</div>
+</body>
+</html>
+
 					}
 					$client->close();
 					?>
