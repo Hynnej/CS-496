@@ -1,7 +1,7 @@
 <!--Displays table-->
 
 <?php
-    require 'connectDB.php';
+    require ('connectDB.php');
 
 
 	$teamName = $_POST['teamEdit'];
