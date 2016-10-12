@@ -1,5 +1,5 @@
 <?php
-    require './include/connectDB.php';
+    require 'connectDB.php';
 ?>
 
 <!DOCTYPE html>
