@@ -4,6 +4,6 @@
 	$client = new MongoClient($uri);
 	$db = $client->selectDB("sports");
 	$teams = $db->team;
-	$collection = $teams->find();	
+
 	//echo $collection;	
 ?>
