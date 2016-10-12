@@ -1,5 +1,5 @@
 <?php
-    require ($_SERVER['DOCUMENT_ROOT'] . 'connectDB.php');
+    require ('/include/connectDB.php');
 ?>
 
 <!DOCTYPE html>
