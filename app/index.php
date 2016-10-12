@@ -1,8 +1,5 @@
 <?php
-    include ($_SERVER['DOCUMENT_ROOT'] . 'connectDB.php');
-	$db = $client->selectDB("sports");
-	$teams = $db->team;
-	$collection = $teams->find();
+    require ($_SERVER['DOCUMENT_ROOT'] . 'connectDB.php');
 ?>
 
 <!DOCTYPE html>
