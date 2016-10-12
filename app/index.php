@@ -1,5 +1,5 @@
 <?php
-require_once(dirname(__FILE__) . "/connectDB.php");
+require_once("/connectDB.php");
 
 ?>
 
