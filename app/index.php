@@ -1,6 +1,5 @@
 <?php
-require_once "connectDB.php";
-
+    require 'connectDB.php';
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +28,6 @@ require_once "connectDB.php";
 					<select class="c-select" name="teamEdit">
 							<option selected>Edit Team</option>						
 							<?php
-								collection = $teams->find();
 								foreach($collection as $doc)
 								{	
 									echo '<option value=" '. $doc["name"] . ' "> ' . $doc["name"] . '</option>\n';
