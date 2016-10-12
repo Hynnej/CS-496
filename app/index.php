@@ -1,5 +1,5 @@
 <?php
-    include '/site/wwwroot/appinclude/connectDB.php';
+    include ($_SERVER['DOCUMENT_ROOT'] . 'connectDB.php');
 ?>
 
 <!DOCTYPE html>
